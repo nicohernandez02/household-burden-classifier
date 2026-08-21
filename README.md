@@ -6,7 +6,10 @@ Binary classification on demographic, housing and behavioural survey
 responses: given a household's characteristics, estimate the probability
 that it reports being financially burdened.
 
-![SVM decision boundary in PCA space](outputs/figures/02_svm_decision_boundary_pca.png)
+**Where it stands:** the target is close to balanced — 50.6% burdened
+against 49.4% not — so accuracy is a meaningful metric here rather than a
+reflection of class imbalance. An RBF SVM baseline reaches 0.763, about 26
+points above chance.
 
 ## Method
 
@@ -57,13 +60,19 @@ pip install -r requirements.txt
 jupyter execute modelling.ipynb
 ```
 
-## Known gap
+## Known gaps
 
-`outputs/tables/` holds the exploratory summaries — variable types, missing
-values, target balance, category counts. It does **not** yet hold the model
-comparison, because those cells were run without their output saved in the
-notebook. Re-running `modelling.ipynb` and exporting the scores table would
-put the result that matters most next to the ones that are already here.
+**The model comparison is missing.** `outputs/tables/` holds the exploratory
+summaries — variable types, missing values, target balance, category counts —
+but not the scores for the five algorithms, because those cells were run
+without saving their output. That is the result that matters most, and it
+belongs here.
+
+**The figures are in Spanish and the SVM plot is not the final model.** The
+decision-boundary plot projects an RBF SVM onto two principal components; the
+deployed pipeline uses a linear classifier. When the notebook is re-run, the
+plots should be regenerated with English labels and without the support-vector
+markers, which currently cover most of the plotting area.
 
 ## Context
 
