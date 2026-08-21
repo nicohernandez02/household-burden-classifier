@@ -1,0 +1,5 @@
+['birthyr',
+ 'child18num',
+ 'assets_estimate',
+ 'response_time_minutes',
+ 'volunteering_index']

@@ -1,0 +1,4 @@
+y
+1    0.506
+0    0.494
+Name: proportion, dtype: float64
