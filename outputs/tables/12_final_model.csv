@@ -1,0 +1,9 @@
+metric,value
+Model,SVM + isotonic recalibration
+Brier score,0.1759
+Brier skill score,0.2952
+ROC AUC,0.8166
+Decision threshold,0.455
+F1 at that threshold,0.7802
+Precision,0.7545
+Recall,0.8077

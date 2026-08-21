@@ -1,0 +1,11 @@
+Model,Scaled,Accuracy,Precision,Recall,F1,ROC AUC
+SVM,yes,0.763,0.774,0.769,0.772,0.816
+Logistic Regression,yes,0.72,0.731,0.731,0.731,0.797
+Gradient Boosting,no,0.717,0.752,0.679,0.714,0.797
+QDA,no,0.75,0.768,0.744,0.756,0.794
+Naive Bayes,no,0.73,0.762,0.699,0.729,0.793
+Random Forest,no,0.723,0.752,0.699,0.724,0.789
+LDA,no,0.703,0.716,0.712,0.714,0.785
+XGBoost,no,0.68,0.683,0.718,0.7,0.77
+KNN,yes,0.673,0.684,0.692,0.688,0.736
+Decision Tree,no,0.61,0.623,0.635,0.629,0.609

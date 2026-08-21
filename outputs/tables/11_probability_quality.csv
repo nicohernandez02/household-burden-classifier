@@ -1,0 +1,7 @@
+metric,value
+Brier score,0.1855
+"Brier, base-rate baseline",0.2496
+Brier skill score,0.2568
+Brier after isotonic recalibration,0.1759
+ROC AUC,0.8162
+Chosen threshold,0.375
